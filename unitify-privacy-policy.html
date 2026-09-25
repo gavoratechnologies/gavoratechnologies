@@ -3,215 +3,761 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy Policy for Unitify by Gavora Technologies.">
+  <meta name="description"
+        content="Privacy Policy for Unitify, a unit conversion app by Gavora Technologies.">
+
   <title>Unitify Privacy Policy | Gavora Technologies</title>
+
   <style>
-    * { box-sizing: border-box; }
+    :root {
+      --primary: #0b4fbd;
+      --primary-light: #1d72e8;
+      --accent: #00a9d6;
+      --navy: #071c3d;
+      --navy-light: #0d2b57;
+      --text: #243247;
+      --muted: #64748b;
+      --background: #f5f8fc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      background: #f7f9fc;
-      color: #243247;
-      font-family: system-ui, -apple-system, sans-serif;
-      line-height: 1.7;
+      font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.75;
     }
-    main {
-      max-width: 820px;
-      margin: 40px auto;
-      padding: 36px;
-      background: #fff;
-      border: 1px solid #e4e9f1;
-      border-radius: 16px;
+
+    /* ================================
+       HEADER
+    ================================= */
+
+    .site-header {
+      background:
+        linear-gradient(
+          135deg,
+          var(--navy) 0%,
+          var(--navy-light) 55%,
+          #0b4f8f 100%
+        );
+
+      color: white;
+      padding: 18px 24px;
+      box-shadow: 0 3px 14px rgba(0, 0, 0, 0.15);
     }
-    h1 { margin-bottom: 8px; color: #1557d6; line-height: 1.2; }
-    h2 { margin-top: 30px; font-size: 1.2rem; }
-    a { color: #1557d6; overflow-wrap: anywhere; }
-    li { margin-bottom: 8px; }
-    .meta, footer { color: #596579; font-size: 0.95rem; }
-    footer { margin-top: 32px; border-top: 1px solid #e4e9f1; padding-top: 20px; }
-    @media (max-width: 600px) {
-      main { margin: 16px; padding: 24px; }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+
+      color: white;
+      text-decoration: none;
+    }
+
+    .brand-logo {
+      width: 46px;
+      height: 46px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+
+      background:
+        linear-gradient(
+          135deg,
+          #1167db,
+          #00a9d6
+        );
+
+      border: 2px solid rgba(255,255,255,0.85);
+
+      font-size: 26px;
+      font-weight: 800;
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 1.1rem;
+      letter-spacing: 0.2px;
+    }
+
+    .brand-text span {
+      display: block;
+      color: #b9d9ff;
+      font-size: 0.78rem;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .header-nav a {
+      color: #dbeafe;
+      text-decoration: none;
+      font-size: 0.93rem;
+      font-weight: 500;
+    }
+
+    .header-nav a:hover {
+      color: white;
+    }
+
+    /* ================================
+       HERO
+    ================================= */
+
+    .hero {
+      background:
+        linear-gradient(
+          135deg,
+          #0b4fbd,
+          #1674d1,
+          #00a9d6
+        );
+
+      color: white;
+      padding: 62px 24px 80px;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .app-badge {
+      display: inline-block;
+
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.35);
+
+      padding: 7px 16px;
+      border-radius: 50px;
+
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+
+      margin-bottom: 17px;
+    }
+
+    .hero h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.15;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+
+      color: #e7f3ff;
+      font-size: 1.05rem;
+    }
+
+    /* ================================
+       MAIN CONTENT
+    ================================= */
+
+    .page-wrapper {
+      max-width: 900px;
+
+      margin: -42px auto 60px;
+      padding: 0 20px;
+
+      position: relative;
+    }
+
+    .policy-card {
+      background: var(--card);
+
+      border: 1px solid var(--border);
+      border-radius: 18px;
+
+      padding: 42px 48px;
+
+      box-shadow:
+        0 12px 35px rgba(15, 40, 80, 0.08);
+    }
+
+    .policy-meta {
+      background: #eff6ff;
+      border-left: 4px solid var(--primary);
+
+      padding: 14px 18px;
+      margin-bottom: 32px;
+
+      border-radius: 7px;
+
+      color: #475569;
+      font-size: 0.94rem;
+    }
+
+    h2 {
+      color: var(--navy);
+      margin-top: 38px;
+      margin-bottom: 12px;
+
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+
+      width: 5px;
+      height: 20px;
+
+      margin-right: 10px;
+      vertical-align: -3px;
+
+      border-radius: 4px;
+      background:
+        linear-gradient(
+          var(--primary-light),
+          var(--accent)
+        );
+    }
+
+    p {
+      margin: 0 0 17px;
+    }
+
+    ul {
+      padding-left: 24px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-box {
+      margin-top: 20px;
+
+      padding: 22px 24px;
+
+      background: #f8fbff;
+      border: 1px solid #dbeafe;
+      border-radius: 12px;
+    }
+
+    .contact-box strong {
+      color: var(--navy);
+      font-size: 1.05rem;
+    }
+
+    /* ================================
+       FOOTER
+    ================================= */
+
+    footer {
+      background: var(--navy);
+      color: #cbd5e1;
+
+      padding: 34px 24px;
+      text-align: center;
+
+      font-size: 0.9rem;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    footer a {
+      color: #93c5fd;
+    }
+
+    .footer-links {
+      margin-top: 10px;
+    }
+
+    .footer-links a {
+      margin: 0 8px;
+    }
+
+    /* ================================
+       MOBILE
+    ================================= */
+
+    @media (max-width: 700px) {
+
+      .site-header {
+        padding: 14px 18px;
+      }
+
+      .header-inner {
+        align-items: flex-start;
+      }
+
+      .header-nav {
+        display: none;
+      }
+
+      .hero {
+        padding: 45px 20px 68px;
+      }
+
+      .page-wrapper {
+        margin-top: -30px;
+        padding: 0 14px;
+      }
+
+      .policy-card {
+        padding: 28px 22px;
+        border-radius: 14px;
+      }
+
+      h2 {
+        font-size: 1.15rem;
+      }
     }
   </style>
 </head>
+
 <body>
-  <main>
-    <header>
-      <h1>Unitify Privacy Policy</h1>
-      <p class="meta">
-        Provided by Gavora Technologies<br>
-        Effective date: <time datetime="2026-09-25">September 25, 2026</time>
-      </p>
-    </header>
 
-    <p>
-      This Privacy Policy explains how Unitify, a unit-conversion app
-      provided by Gavora Technologies, handles information when you use
-      the app or contact us for support.
-    </p>
+  <!-- HEADER -->
+  <header class="site-header">
 
-    <h2>1. Information stored on your device</h2>
-    <p>
-      Unitify performs conversions on your device and stores information
-      locally to provide its features. This includes:
-    </p>
-    <ul>
-      <li>
-        Preferences such as your selected country, category, units,
-        unit system, decimal separator, and display settings.
-      </li>
-      <li>
-        Recent conversions, including entered values, calculated results,
-        and the associated units and categories.
-      </li>
-      <li>Your favorite categories and favorite conversions.</li>
-      <li>Your response to the conversion disclaimer.</li>
-    </ul>
-    <p>
-      This information is used to restore your preferences, display
-      conversion history, and provide personalized defaults. Selecting
-      a country is a preference; it does not give the app access to
-      your device's location.
-    </p>
+    <div class="header-inner">
 
-    <h2>2. Information transmitted to us</h2>
-    <p>
-      The current version of Unitify does not require an account and
-      does not upload your conversion inputs, results, history, or
-      preferences to servers operated by Gavora Technologies.
-      It does not include analytics, remote crash-reporting, or
-      advertising SDKs.
-    </p>
-    <p>
-      If you email us, we receive your email address, your message,
-      and any attachments or other information you choose to send.
-      We use that information to respond to your request and provide
-      support. Please avoid sending information that is unnecessary
-      for resolving your issue.
-    </p>
+      <a
+        class="brand"
+        href="https://gavoratechnologies.github.io/gavoratechnologies/"
+        aria-label="Gavora Technologies home"
+      >
 
-    <h2>3. Copying and sharing</h2>
-    <p>
-      When you choose a copy action, Unitify places the selected
-      conversion information on your device's clipboard. Clipboard
-      access and retention depend on your operating system and settings.
-    </p>
-    <p>
-      When you choose to share, Unitify prepares text or an image of
-      app content and opens your device's sharing interface. The
-      information you share may include conversion values, results,
-      and other content visible in the shared image.
-    </p>
-    <p>
-      The app or recipient you select receives the content you choose
-      to send. Their handling of that content is governed by their own
-      privacy practices. Images prepared for sharing may temporarily
-      be stored in the app's cache.
-    </p>
+        <div class="brand-logo">G</div>
 
-    <h2>4. Advertising and sale of information</h2>
-    <p>
-      The current version does not serve advertisements through an
-      advertising network. Any advertisement space shown in the
-      interface is a placeholder and does not load third-party ads.
-      We do not sell or rent your personal information.
-    </p>
+        <div class="brand-text">
+          <strong>Gavora Technologies</strong>
+          <span>Stability • Security • Innovation</span>
+        </div>
 
-    <h2>5. Device access</h2>
-    <p>
-      Unitify's current features do not request access to your
-      location, contacts, camera, microphone, or photo library.
-      Creating an image for sharing captures app content; it does
-      not use your camera.
-    </p>
-    <p>
-      Local storage, clipboard actions, and sharing use facilities
-      provided by your device's operating system.
-    </p>
-
-    <h2>6. Retention and deletion</h2>
-    <p>
-      Preferences, favorites, disclaimer choices, and conversion
-      history remain in the app's local storage while needed for
-      its features. Recent history is limited, and older entries
-      may be automatically removed as new entries are saved.
-    </p>
-    <p>
-      You can remove locally stored app data through Android's
-      Settings by opening Apps, selecting Unitify, and choosing
-      Storage and Clear storage or Clear data. Menu names vary by
-      device. Uninstalling the app normally removes its local data.
-    </p>
-    <p>
-      Operating-system backup and restore features may preserve or
-      restore app data depending on your device settings. Manage
-      those backups through your device or backup provider.
-      Clearing Unitify's data does not delete content already
-      copied, shared, or saved in another app.
-    </p>
-    <p>
-      Support emails are retained only as long as reasonably needed
-      to handle your request and meet applicable legal obligations.
-      You may request deletion of support correspondence by emailing
-      us. We cannot remotely access or delete information stored
-      only on your device.
-    </p>
-
-    <h2>7. Security</h2>
-    <p>
-      Local app data is stored within the storage provided to Unitify
-      by your operating system. Its protection also depends on your
-      device security, screen lock, and backup settings. No method of
-      storage or transmission can guarantee absolute security.
-    </p>
-
-    <h2>8. External links and services</h2>
-    <p>
-      Unitify may open websites, an email app, an app store, or a
-      sharing destination when you choose those actions. These
-      services operate under their own privacy policies.
-    </p>
-    <p>
-      This policy describes the Unitify app. The hosting provider
-      for this policy page and other linked websites may process
-      web requests under their own privacy policies.
-    </p>
-
-    <h2>9. Children's privacy</h2>
-    <p>
-      Unitify is a general-purpose conversion tool and does not
-      knowingly collect personal information from children.
-      If you believe a child has provided personal information
-      to us through support correspondence, please contact us
-      so we can address the request and delete that information
-      where appropriate.
-    </p>
-
-    <h2>10. Changes to this policy</h2>
-    <p>
-      We may update this policy when the app or its data practices
-      change. Updates will be published on this page with a revised
-      effective date. Where required, we will provide additional
-      notice or request consent.
-    </p>
-
-    <h2>11. Contact us</h2>
-    <p>
-      For privacy questions or requests concerning information
-      you have sent to us, contact:
-    </p>
-    <p>
-      <strong>Gavora Technologies</strong><br>
-      Email:
-      <a href="mailto:gavoratechnologies@gmail.com">
-        gavoratechnologies@gmail.com
-      </a><br>
-      Website:
-      <a href="https://gavoratechnologies.github.io/gavoratechnologies/#unitify">
-        Gavora Technologies — Unitify
       </a>
-    </p>
 
-    <footer>Unitify &middot; Gavora Technologies</footer>
+      <nav class="header-nav">
+
+        <a
+          href="https://gavoratechnologies.github.io/gavoratechnologies/">
+          Home
+        </a>
+
+        <a
+          href="https://gavoratechnologies.github.io/gavoratechnologies/#unitify">
+          Unitify
+        </a>
+
+        <a href="mailto:gavoratechnologies@gmail.com">
+          Contact
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="app-badge">
+        UNITIFY • GAVORA TECHNOLOGIES
+      </div>
+
+      <h1>Privacy Policy</h1>
+
+      <p>
+        Your privacy matters. This policy explains how Unitify
+        handles information when you use our unit-conversion app.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- POLICY -->
+  <main class="page-wrapper">
+
+    <article class="policy-card">
+
+      <div class="policy-meta">
+
+        <strong>Unitify Privacy Policy</strong><br>
+
+        Provided by Gavora Technologies<br>
+
+        Effective date:
+        <time datetime="2026-09-25">
+          September 25, 2026
+        </time>
+
+      </div>
+
+
+      <p>
+        This Privacy Policy explains how Unitify, a unit-conversion
+        app provided by Gavora Technologies, handles information
+        when you use the app or contact us for support.
+      </p>
+
+
+      <h2>1. Information stored on your device</h2>
+
+      <p>
+        Unitify performs conversions on your device and stores
+        information locally to provide its features. This includes:
+      </p>
+
+      <ul>
+
+        <li>
+          Preferences such as your selected country, category,
+          units, unit system, decimal separator, and display
+          settings.
+        </li>
+
+        <li>
+          Recent conversions, including entered values,
+          calculated results, and the associated units
+          and categories.
+        </li>
+
+        <li>
+          Your favorite categories and favorite conversions.
+        </li>
+
+        <li>
+          Your response to the conversion disclaimer.
+        </li>
+
+      </ul>
+
+      <p>
+        This information is used to restore your preferences,
+        display conversion history, and provide personalized
+        defaults. Selecting a country is a preference; it does
+        not give the app access to your device's location.
+      </p>
+
+
+      <h2>2. Information transmitted to us</h2>
+
+      <p>
+        The current version of Unitify does not require an account
+        and does not upload your conversion inputs, results,
+        history, or preferences to servers operated by
+        Gavora Technologies.
+      </p>
+
+      <p>
+        The current version does not include analytics,
+        remote crash-reporting, or advertising SDKs.
+      </p>
+
+      <p>
+        If you email us, we receive your email address, your
+        message, and any attachments or other information you
+        choose to send.
+      </p>
+
+      <p>
+        We use that information to respond to your request and
+        provide support. Please avoid sending information that
+        is unnecessary for resolving your issue.
+      </p>
+
+
+      <h2>3. Copying and sharing</h2>
+
+      <p>
+        When you choose a copy action, Unitify places the selected
+        conversion information on your device's clipboard.
+        Clipboard access and retention depend on your operating
+        system and settings.
+      </p>
+
+      <p>
+        When you choose to share, Unitify prepares text or an image
+        of app content and opens your device's sharing interface.
+      </p>
+
+      <p>
+        The information you share may include conversion values,
+        results, and other content visible in the shared image.
+      </p>
+
+      <p>
+        The app or recipient you select receives the content you
+        choose to send. Their handling of that content is governed
+        by their own privacy practices.
+      </p>
+
+      <p>
+        Images prepared for sharing may temporarily be stored
+        in the app's cache.
+      </p>
+
+
+      <h2>4. Advertising and sale of information</h2>
+
+      <p>
+        The current version does not serve advertisements through
+        an advertising network. Any advertisement space shown in
+        the interface is a placeholder and does not load
+        third-party ads.
+      </p>
+
+      <p>
+        We do not sell or rent your personal information.
+      </p>
+
+
+      <h2>5. Device access</h2>
+
+      <p>
+        Unitify's current features do not request access to your
+        location, contacts, camera, microphone, or photo library.
+      </p>
+
+      <p>
+        Creating an image for sharing captures app content;
+        it does not use your camera.
+      </p>
+
+      <p>
+        Local storage, clipboard actions, and sharing use
+        facilities provided by your device's operating system.
+      </p>
+
+
+      <h2>6. Retention and deletion</h2>
+
+      <p>
+        Preferences, favorites, disclaimer choices, and conversion
+        history remain in the app's local storage while needed
+        for its features.
+      </p>
+
+      <p>
+        Recent history is limited, and older entries may be
+        automatically removed as new entries are saved.
+      </p>
+
+      <p>
+        You can remove locally stored app data through Android's
+        Settings by opening Apps, selecting Unitify, and choosing
+        Storage and Clear storage or Clear data. Menu names may
+        vary by device.
+      </p>
+
+      <p>
+        Uninstalling the app normally removes its local data.
+      </p>
+
+      <p>
+        Operating-system backup and restore features may preserve
+        or restore app data depending on your device settings.
+        Manage those backups through your device or backup
+        provider.
+      </p>
+
+      <p>
+        Clearing Unitify's data does not delete content already
+        copied, shared, or saved in another app.
+      </p>
+
+      <p>
+        Support emails are retained only as long as reasonably
+        needed to handle your request and meet applicable legal
+        obligations.
+      </p>
+
+      <p>
+        You may request deletion of support correspondence by
+        emailing us. We cannot remotely access or delete
+        information stored only on your device.
+      </p>
+
+
+      <h2>7. Security</h2>
+
+      <p>
+        Local app data is stored within the storage provided to
+        Unitify by your operating system.
+      </p>
+
+      <p>
+        Its protection also depends on your device security,
+        screen lock, and backup settings. No method of storage
+        or transmission can guarantee absolute security.
+      </p>
+
+
+      <h2>8. External links and services</h2>
+
+      <p>
+        Unitify may open websites, an email app, an app store,
+        or a sharing destination when you choose those actions.
+      </p>
+
+      <p>
+        These services operate under their own privacy policies.
+      </p>
+
+      <p>
+        This policy describes the Unitify app. The hosting provider
+        for this policy page and other linked websites may process
+        web requests under their own privacy policies.
+      </p>
+
+
+      <h2>9. Children's privacy</h2>
+
+      <p>
+        Unitify is a general-purpose conversion tool and does not
+        knowingly collect personal information from children.
+      </p>
+
+      <p>
+        If you believe a child has provided personal information
+        to us through support correspondence, please contact us
+        so we can address the request and delete that information
+        where appropriate.
+      </p>
+
+
+      <h2>10. Changes to this policy</h2>
+
+      <p>
+        We may update this policy when the app or its data
+        practices change.
+      </p>
+
+      <p>
+        Updates will be published on this page with a revised
+        effective date. Where required, we will provide additional
+        notice or request consent.
+      </p>
+
+
+      <h2>11. Contact us</h2>
+
+      <p>
+        For privacy questions or requests concerning information
+        you have sent to us, contact:
+      </p>
+
+      <div class="contact-box">
+
+        <strong>Gavora Technologies</strong>
+
+        <p>
+          Email:
+          <a href="mailto:gavoratechnologies@gmail.com">
+            gavoratechnologies@gmail.com
+          </a>
+        </p>
+
+        <p>
+          Website:
+          <a
+            href="https://gavoratechnologies.github.io/gavoratechnologies/#unitify">
+            Gavora Technologies — Unitify
+          </a>
+        </p>
+
+      </div>
+
+    </article>
+
   </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <strong>Gavora Technologies</strong>
+
+    <div>
+      Continuously improving through stability,
+      security, and innovation.
+    </div>
+
+    <div class="footer-links">
+
+      <a
+        href="https://gavoratechnologies.github.io/gavoratechnologies/">
+        Home
+      </a>
+
+      <a
+        href="https://gavoratechnologies.github.io/gavoratechnologies/#unitify">
+        Unitify
+      </a>
+
+      <a href="mailto:gavoratechnologies@gmail.com">
+        Contact
+      </a>
+
+    </div>
+
+    <div style="margin-top:14px;">
+      &copy; 2026 Gavora Technologies.
+      All rights reserved.
+    </div>
+
+  </footer>
+
 </body>
 </html>
