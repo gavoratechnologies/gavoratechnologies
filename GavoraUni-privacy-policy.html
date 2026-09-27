@@ -1,1 +1,900 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Privacy Policy for GavoraUni: Unit Converter, an app by Gavora Technologies."
+  >
+
+  <title>GavoraUni Privacy Policy | Gavora Technologies</title>
+
+  <style>
+    :root {
+      --primary: #0b4fbd;
+      --primary-light: #1d72e8;
+      --accent: #00a9d6;
+      --navy: #071c3d;
+      --navy-light: #0d2b57;
+      --text: #243247;
+      --muted: #64748b;
+      --background: #f5f8fc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    /* HEADER */
+
+    .site-header {
+      background:
+        linear-gradient(
+          135deg,
+          var(--navy) 0%,
+          var(--navy-light) 55%,
+          #0b4f8f 100%
+        );
+      color: white;
+      padding: 18px 24px;
+      box-shadow: 0 3px 14px rgba(0, 0, 0, 0.15);
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .brand-logo {
+      width: 46px;
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1167db, #00a9d6);
+      border: 2px solid rgba(255, 255, 255, 0.85);
+      font-size: 26px;
+      font-weight: 800;
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 1.1rem;
+      letter-spacing: 0.2px;
+    }
+
+    .brand-text span {
+      display: block;
+      color: #b9d9ff;
+      font-size: 0.78rem;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .header-nav a {
+      color: #dbeafe;
+      text-decoration: none;
+      font-size: 0.93rem;
+      font-weight: 500;
+    }
+
+    .header-nav a:hover {
+      color: white;
+    }
+
+    /* HERO */
+
+    .hero {
+      background:
+        linear-gradient(
+          135deg,
+          #0b4fbd,
+          #1674d1,
+          #00a9d6
+        );
+      color: white;
+      padding: 62px 24px 80px;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .app-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      padding: 7px 16px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      margin-bottom: 17px;
+    }
+
+    .hero h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.15;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #e7f3ff;
+      font-size: 1.05rem;
+    }
+
+    /* MAIN CONTENT */
+
+    .page-wrapper {
+      max-width: 900px;
+      margin: -42px auto 60px;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    .policy-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 42px 48px;
+      box-shadow: 0 12px 35px rgba(15, 40, 80, 0.08);
+    }
+
+    .policy-meta {
+      background: #eff6ff;
+      border-left: 4px solid var(--primary);
+      padding: 14px 18px;
+      margin-bottom: 32px;
+      border-radius: 7px;
+      color: #475569;
+      font-size: 0.94rem;
+    }
+
+    h2 {
+      color: var(--navy);
+      margin-top: 38px;
+      margin-bottom: 12px;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 20px;
+      margin-right: 10px;
+      vertical-align: -3px;
+      border-radius: 4px;
+      background:
+        linear-gradient(
+          var(--primary-light),
+          var(--accent)
+        );
+    }
+
+    p {
+      margin: 0 0 17px;
+    }
+
+    ul {
+      padding-left: 24px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .info-box {
+      margin: 20px 0;
+      padding: 20px 24px;
+      background: #f8fbff;
+      border: 1px solid #dbeafe;
+      border-radius: 12px;
+    }
+
+    .contact-box {
+      margin-top: 20px;
+      padding: 22px 24px;
+      background: #f8fbff;
+      border: 1px solid #dbeafe;
+      border-radius: 12px;
+    }
+
+    .contact-box strong {
+      color: var(--navy);
+      font-size: 1.05rem;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--navy);
+      color: #cbd5e1;
+      padding: 34px 24px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    footer a {
+      color: #93c5fd;
+    }
+
+    .footer-links {
+      margin-top: 10px;
+    }
+
+    .footer-links a {
+      margin: 0 8px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+      .site-header {
+        padding: 14px 18px;
+      }
+
+      .header-inner {
+        align-items: flex-start;
+      }
+
+      .header-nav {
+        display: none;
+      }
+
+      .hero {
+        padding: 45px 20px 68px;
+      }
+
+      .page-wrapper {
+        margin-top: -30px;
+        padding: 0 14px;
+      }
+
+      .policy-card {
+        padding: 28px 22px;
+        border-radius: 14px;
+      }
+
+      h2 {
+        font-size: 1.15rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+
+      <a
+        class="brand"
+        href="https://gavoratechnologies.github.io/gavoratechnologies/"
+        aria-label="Gavora Technologies home"
+      >
+        <div class="brand-logo">G</div>
+
+        <div class="brand-text">
+          <strong>Gavora Technologies</strong>
+          <span>Stability • Security • Innovation</span>
+        </div>
+      </a>
+
+      <nav class="header-nav">
+        <a href="https://gavoratechnologies.github.io/gavoratechnologies/">
+          Home
+        </a>
+
+        <a href="https://gavoratechnologies.github.io/gavoratechnologies/#unitify">
+          GavoraUni
+        </a>
+
+        <a href="mailto:gavoratechnologies@gmail.com">
+          Contact
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+
+      <div class="app-badge">
+        GAVORAUNI • GAVORA TECHNOLOGIES
+      </div>
+
+      <h1>Privacy Policy</h1>
+
+      <p>
+        Your privacy matters. This policy explains how GavoraUni
+        handles information when you use our unit-conversion app,
+        including information that may be processed by third-party
+        advertising services.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- PRIVACY POLICY -->
+  <main class="page-wrapper">
+
+    <article class="policy-card">
+
+      <div class="policy-meta">
+        <strong>GavoraUni Privacy Policy</strong><br>
+        Provided by Gavora Technologies<br>
+
+        Effective date:
+        <time datetime="2026-09-25">
+          September 25, 2026
+        </time>
+      </div>
+
+
+      <p>
+        This Privacy Policy explains how GavoraUni, a unit-conversion
+        application provided by Gavora Technologies, handles
+        information when you use the app or contact us for support.
+      </p>
+
+
+      <!-- SECTION 1 -->
+
+      <h2>1. Information stored on your device</h2>
+
+      <p>
+        GavoraUni performs conversions on your device and stores
+        certain information locally to provide its features.
+        This may include:
+      </p>
+
+      <ul>
+        <li>
+          Preferences such as your selected country, category,
+          units, unit system, decimal separator, and display settings.
+        </li>
+
+        <li>
+          Recent conversions, including entered values,
+          calculated results, and associated units and categories.
+        </li>
+
+        <li>
+          Your favorite categories and favorite conversions.
+        </li>
+
+        <li>
+          Your response to the conversion disclaimer.
+        </li>
+      </ul>
+
+      <p>
+        This information is used to restore your preferences,
+        display conversion history, and provide personalized defaults.
+      </p>
+
+      <p>
+        Selecting a country within GavoraUni is an app preference.
+        It does not give GavoraUni access to your device's precise
+        geographic location.
+      </p>
+
+
+      <!-- SECTION 2 -->
+
+      <h2>2. Information transmitted or processed</h2>
+
+      <p>
+        GavoraUni does not require you to create an account.
+        Gavora Technologies does not upload your conversion inputs,
+        calculated results, favorites, conversion history, or
+        locally stored preferences to servers operated by
+        Gavora Technologies.
+      </p>
+
+      <p>
+        GavoraUni may use third-party services, including Google AdMob,
+        to provide advertising. These third-party services may
+        automatically collect or process certain information in
+        accordance with their own privacy policies.
+      </p>
+
+      <p>
+        Depending on the service, your device, your settings,
+        applicable law, and your consent choices, information
+        processed by an advertising provider may include:
+      </p>
+
+      <ul>
+        <li>IP address.</li>
+        <li>Device and advertising identifiers.</li>
+        <li>General device and operating-system information.</li>
+        <li>Advertising interactions and impressions.</li>
+        <li>Diagnostic and performance information.</li>
+        <li>
+          Other information required to provide, secure,
+          measure, or improve advertising services.
+        </li>
+      </ul>
+
+      <p>
+        If you contact us by email, we receive your email address,
+        message, and any attachments or other information you choose
+        to provide.
+      </p>
+
+      <p>
+        We use support correspondence to respond to your request
+        and provide assistance. Please avoid sending information
+        that is unnecessary for resolving your issue.
+      </p>
+
+
+      <!-- SECTION 3 -->
+
+      <h2>3. Copying and sharing</h2>
+
+      <p>
+        When you choose a copy action, GavoraUni places the selected
+        conversion information on your device's clipboard.
+        Clipboard access and retention depend on your operating
+        system and device settings.
+      </p>
+
+      <p>
+        When you choose to share, GavoraUni may prepare text or an
+        image containing app content and open your device's
+        sharing interface.
+      </p>
+
+      <p>
+        The information you choose to share may include conversion
+        values, calculated results, units, and other content visible
+        in the shared material.
+      </p>
+
+      <p>
+        The application or recipient you select receives the content
+        that you choose to send. Their handling of that information
+        is governed by their own privacy practices.
+      </p>
+
+      <p>
+        Images or other files prepared for sharing may be stored
+        temporarily in the app's cache.
+      </p>
+
+
+      <!-- SECTION 4 -->
+
+      <h2>4. Advertising and Google AdMob</h2>
+
+      <p>
+        GavoraUni may display advertisements provided through
+        Google AdMob, an advertising service provided by Google.
+      </p>
+
+      <p>
+        Google and its advertising services may collect or process
+        certain information from your device for purposes such as
+        providing advertisements, measuring advertising performance,
+        preventing fraud and abuse, and improving advertising services.
+      </p>
+
+      <p>
+        Depending on your device, region, consent choices,
+        applicable law, and advertising configuration, this
+        information may include device identifiers, advertising
+        identifiers, IP address, general device information,
+        advertising interactions, and diagnostic information.
+      </p>
+
+      <p>
+        Where required by applicable law, users may be presented
+        with consent choices before personalized advertising or
+        certain advertising-related processing occurs.
+      </p>
+
+      <p>
+        Depending on your consent choices, age, location,
+        device settings, and applicable requirements, Google may
+        provide personalized, non-personalized, or limited ads.
+      </p>
+
+      <div class="info-box">
+        <strong>Google Privacy Information</strong>
+
+        <p>
+          You can learn more about how Google handles information
+          through its services by reviewing Google's Privacy Policy.
+        </p>
+
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://policies.google.com/privacy
+        </a>
+      </div>
+
+      <p>
+        Gavora Technologies does not sell or rent users'
+        personal information.
+      </p>
+
+
+      <!-- SECTION 5 -->
+
+      <h2>5. Device access</h2>
+
+      <p>
+        GavoraUni's core conversion features do not require access
+        to your contacts, camera, microphone, or photo library.
+      </p>
+
+      <p>
+        Creating an image for sharing captures content generated
+        within GavoraUni. It does not use your device's camera.
+      </p>
+
+      <p>
+        Local storage, clipboard actions, and sharing use facilities
+        provided by your device's operating system.
+      </p>
+
+      <p>
+        Third-party SDKs included in the application may access
+        device or network information necessary to provide their
+        services, subject to Android permissions, platform controls,
+        applicable law, and their respective privacy policies.
+      </p>
+
+
+      <!-- SECTION 6 -->
+
+      <h2>6. Retention and deletion</h2>
+
+      <p>
+        Preferences, favorites, disclaimer choices, and conversion
+        history may remain in GavoraUni's local storage while needed
+        to provide the app's features.
+      </p>
+
+      <p>
+        Recent conversion history may be limited, and older entries
+        may be automatically removed as new entries are saved.
+      </p>
+
+      <p>
+        You can remove locally stored GavoraUni data through your
+        Android device's Settings. Typically, you can open Apps,
+        select GavoraUni, choose Storage, and select Clear storage
+        or Clear data. Menu names may vary by device.
+      </p>
+
+      <p>
+        Uninstalling GavoraUni normally removes data stored locally
+        by the application.
+      </p>
+
+      <p>
+        Operating-system backup and restore features may preserve
+        or restore app data depending on your device settings.
+        These backups are controlled through your device or
+        backup provider.
+      </p>
+
+      <p>
+        Clearing GavoraUni's local data does not delete content
+        that you have already copied, shared, or saved in another
+        application or service.
+      </p>
+
+      <p>
+        Support emails may be retained for as long as reasonably
+        necessary to respond to your request and meet applicable
+        legal obligations.
+      </p>
+
+      <p>
+        You may contact us to request deletion of personal
+        information contained in correspondence you have sent
+        directly to Gavora Technologies.
+      </p>
+
+      <p>
+        Gavora Technologies cannot remotely access or delete
+        information stored only on your device.
+      </p>
+
+      <p>
+        Information processed independently by third-party services
+        is subject to the retention and deletion practices of those
+        service providers.
+      </p>
+
+
+      <!-- SECTION 7 -->
+
+      <h2>7. Security</h2>
+
+      <p>
+        Local app data is stored using storage facilities provided
+        to GavoraUni by your operating system.
+      </p>
+
+      <p>
+        The protection of locally stored information also depends
+        on your device security, screen lock, operating-system
+        configuration, and backup settings.
+      </p>
+
+      <p>
+        We take reasonable steps to protect information under our
+        control, but no method of electronic storage or transmission
+        can guarantee absolute security.
+      </p>
+
+
+      <!-- SECTION 8 -->
+
+      <h2>8. Third-party services and external links</h2>
+
+      <p>
+        GavoraUni may use or interact with third-party services,
+        including Google AdMob and services provided by your
+        Android device.
+      </p>
+
+      <p>
+        GavoraUni may also open websites, an email application,
+        an app store, or a sharing destination when you choose
+        those actions.
+      </p>
+
+      <p>
+        Third-party services operate according to their own terms
+        and privacy policies. Gavora Technologies does not control
+        how independent third-party services process information.
+      </p>
+
+      <p>
+        Google's Privacy Policy is available at:
+      </p>
+
+      <p>
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Google Privacy Policy
+        </a>
+      </p>
+
+      <p>
+        This Privacy Policy primarily describes the GavoraUni
+        application. The hosting provider for this privacy-policy
+        page and other websites you visit may independently process
+        web requests under their own privacy policies.
+      </p>
+
+
+      <!-- SECTION 9 -->
+
+      <h2>9. Children's privacy</h2>
+
+      <p>
+        GavoraUni is a general-purpose unit-conversion utility and
+        is not specifically designed to collect personal information
+        from children.
+      </p>
+
+      <p>
+        If you believe that a child has provided personal information
+        directly to Gavora Technologies through support correspondence,
+        please contact us so that we can review the request and take
+        appropriate action.
+      </p>
+
+      <p>
+        Advertising shown to users may be subject to additional
+        requirements based on the user's age, applicable law,
+        Google Play policies, and Google advertising policies.
+      </p>
+
+
+      <!-- SECTION 10 -->
+
+      <h2>10. Your choices</h2>
+
+      <p>
+        Depending on your device, region, and applicable law,
+        you may have choices concerning advertising personalization
+        and advertising-related data processing.
+      </p>
+
+      <p>
+        These choices may be available through consent messages
+        presented within the app, your Android device settings,
+        your Google account settings, or other controls provided
+        by Google.
+      </p>
+
+      <p>
+        You may also clear GavoraUni's locally stored data or
+        uninstall the application at any time.
+      </p>
+
+
+      <!-- SECTION 11 -->
+
+      <h2>11. Changes to this Privacy Policy</h2>
+
+      <p>
+        We may update this Privacy Policy when GavoraUni's features,
+        third-party services, advertising configuration, legal
+        requirements, or data practices change.
+      </p>
+
+      <p>
+        Updates will be published on this page with a revised
+        effective date.
+      </p>
+
+      <p>
+        Where required, we may provide additional notice or
+        request consent.
+      </p>
+
+
+      <!-- SECTION 12 -->
+
+      <h2>12. Contact us</h2>
+
+      <p>
+        If you have questions about this Privacy Policy or
+        information you have provided directly to Gavora
+        Technologies, please contact us.
+      </p>
+
+      <div class="contact-box">
+
+        <strong>Gavora Technologies</strong>
+
+        <p>
+          Application: GavoraUni: Unit Converter
+        </p>
+
+        <p>
+          Email:
+          <a href="mailto:gavoratechnologies@gmail.com">
+            gavoratechnologies@gmail.com
+          </a>
+        </p>
+
+        <p>
+          Website:
+          <a
+            href="https://gavoratechnologies.github.io/gavoratechnologies/#unitify"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Gavora Technologies — GavoraUni
+          </a>
+        </p>
+
+      </div>
+
+    </article>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <strong>Gavora Technologies</strong>
+
+    <div>
+      Continuously improving through stability,
+      security, and innovation.
+    </div>
+
+    <div class="footer-links">
+
+      <a
+        href="https://gavoratechnologies.github.io/gavoratechnologies/"
+      >
+        Home
+      </a>
+
+      <a
+        href="https://gavoratechnologies.github.io/gavoratechnologies/#unitify"
+      >
+        GavoraUni
+      </a>
+
+      <a href="mailto:gavoratechnologies@gmail.com">
+        Contact
+      </a>
+
+    </div>
+
+    <div style="margin-top:14px;">
+      &copy; 2026 Gavora Technologies.
+      All rights reserved.
+    </div>
+
+  </footer>
+
+</body>
+</html>
